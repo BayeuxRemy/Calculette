@@ -1,16 +1,3 @@
-// Baréme:
-
-//Calculette
-// affichage des boutons et mise en place d'un écouteur sur chacun d'eux: 3 points
-// Affichage de la croix et mise en place de l'écouteur permettant d'effacer la calculette et de supprimer l' objet correspondant: 2 points
-// Traitement en fonction de la touche préssée : 0.5 point par contrainte respectée
-
-//Calculette2
-// drag de la calculette : 4
-// éviter la propagation des événements pour ne pas pouvoir déplacer la calculette é partie des boutons ou de l'afficheur: 1
-
-//Calculette3   + 1 point moyenne JS si fonctionne.
-
 class Calculette {
   constructor(color){
 	    this.color=color; // couleur de la calculette
@@ -49,7 +36,6 @@ class Calculette {
 				document.querySelector("body").appendChild(div);
 
 				// Mise en place de la croix permettant d'effacer la calculette et de supprinmer l'objet correspondant en mémoire
-				// Il faut mettre en place un écouteur
 				this.croix = document.createElement("img");
 				let croix= this.croix;
 					croix.src="croix.jpg";
@@ -98,8 +84,6 @@ class Calculette {
 				this.button=[];
 
 				// boucle permettant de mettre en place les 20 boutons de la calculette
-				// Il faut compléter cette création de boutons et mettre en place les écouteurs
-				// Chaque bouton aura une largeur et une hauteur de 50px
 				for(let i=0;i<=19;i++){
 					this.button[i]=document.createElement("input");
 					this.button[i].value = t[i];
